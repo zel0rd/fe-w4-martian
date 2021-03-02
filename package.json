@@ -1,0 +1,31 @@
+{
+  "name": "promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myPromise.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "scss": "node-sass --watch public/style/scss --output public/style/css",
+    "start": "concurrently -n 'dev,scss' -c 'bgGreen.bold,bgBlue.bold' 'npm run dev' 'npm run scss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ink-0/fe-w4-martian.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ink-0/fe-w4-martian/issues"
+  },
+  "homepage": "https://github.com/ink-0/fe-w4-martian#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
