@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>마션: 16진수 송수신기</title>
+    <link rel='stylesheet' href='/css/normalize.css'/>
+    <link rel='stylesheet' href='/css/reset.css'/>
+    <link rel='stylesheet' href='/css/style.css' />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="outer_wrapper">
+      <div class="inner_wrapper">
+      <%#컨버터 섹션%>
+      <section class="converter">
+        <div class="converter_container">
+
+        </div>
+        <div class="earth_container">
+          <span>
+            <img src="/images/earth-globe.png" class="globe-image" alt="earth-globe image">
+          </span>
+      </section>
+      <%#컨트롤 섹션%>
+      <section class="control">
+        <ul class="control_container">
+          <li class="control_hexadecimal">
+            <h3>송수신정보</h3>
+            <div class="hexadecimal_result"></div>
+            <button class="hexadecimal_translate">해석하기</button>
+          </li>
+          <li class="control_language">
+            <h3>발신정보입력</h3>
+            <input class="language_input"></input>
+            <button class="languag_send">지구로 보내기</button>
+          </li>
+        </ul>
+      </section>
+      </div>
+    </div>
+  </body>
+</html>
