@@ -62,13 +62,19 @@ body {
 
 .converter_container {
   height: 100%;
-  width: 70%;
+  width: 80%;
   display: inline-block;
+  position: relative;
+}
+
+svg {
+  margin-top: 40px;
+  height: 450px;
 }
 
 .earth_container {
   height: 100%;
-  width: 30%;
+  width: 20%;
   display: inline-block;
   display: flex;
   align-items: flex-end;
@@ -79,6 +85,26 @@ body {
   margin: 2rem 2rem 0 0;
   height: 5rem;
   width: 5rem;
+}
+
+.blink {
+  color: #ffc048;
+  fill: currentColor;
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 30%;
+  }
+}
+
+.arrow {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 240px;
+  right: 450px;
 }
 
 /*-------------------------------*/
@@ -97,7 +123,6 @@ body {
 .control_container > li {
   width: 43%;
   height: 100%;
-  border: 3px solid skyblue;
   display: inline-block;
   text-align: left;
 }
@@ -106,4 +131,66 @@ body {
   color: #555;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.hexadecimal_result {
+  margin: 0.5rem 0;
+  width: 10rem;
+  height: 1.5rem;
+  border: 3px solid #555;
+  border-radius: 5px;
+}
+
+.language_input {
+  font-size: 0.7rem;
+  margin: 0.5rem 0;
+  display: block;
+  width: 10rem;
+  height: 1.5rem;
+  border: 3px solid #555;
+  border-radius: 5px;
+}
+
+.hexadecimal_translate {
+  margin-top: 0.3rem;
+  width: 5rem;
+  height: 1.5rem;
+  font-weight: 600;
+  font-size: 0.7rem;
+  border: none;
+  background-color: #038ef8;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hexadecimal_translate:hover {
+  background-color: #1b9afcc6;
+  transition: background-color 0.2s;
+}
+
+.hexadecimal_translate:not(:hover) {
+  transition: background-color 0.2s;
+}
+
+.languag_send {
+  margin-top: 0.3rem;
+  width: 5rem;
+  height: 1.5rem;
+  font-weight: 600;
+  font-size: 0.7rem;
+  border: none;
+  background-color: #ff7f50;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.languag_send:hover {
+  background-color: #ff7f50c5;
+  transition: background-color 0.2s;
+}
+
+.languag_send:not(:hover) {
+  transition: background-color 0.2s;
 }
