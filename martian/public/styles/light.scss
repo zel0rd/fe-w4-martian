@@ -1,0 +1,49 @@
+// test
+
+.light {
+  -webkit-animation: fadeOut 1s 1s infinite linear alternate;
+  -moz-animation: fadeOut 1s 1s infinite linear alternate;
+  -ms-animation: fadeOut 1s 1s infinite linear alternate;
+  -o-animation: fadeOut 1s 1s infinite linear alternate;
+  animation: fadeOut 1s 1s infinite linear alternate;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

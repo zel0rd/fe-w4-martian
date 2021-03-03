@@ -1,0 +1,111 @@
+@import "./vars.scss";
+@import "./light.scss";
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+
+ul,
+li,
+button,
+input {
+  all: unset;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  border-radius: 50%;
+  background-color: $light_blue;
+  // border: 1px solid $light;
+}
+
+.line {
+  position: absolute;
+  width: 400px;
+  height: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 1px solid $light;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    color: $numbers;
+    font-family: "Suez One", serif;
+    font-size: 25px;
+  }
+
+  .line__text {
+    position: absolute;
+    display: block;
+  }
+
+  .line__text:first-child {
+    left: 20px;
+    top: 20px;
+  }
+
+  .line__text:last-child {
+    right: 20px;
+    top: -50px;
+  }
+}
+
+@for $i from 1 to $hexadecimal {
+  .line#{$i} {
+    transform: rotate($initAngle * $i);
+    span {
+      transform: rotate(-($initAngle * $i));
+    }
+  }
+}
+
+.roulette__arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) rotate(15deg);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: $light;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 80px;
+  color: $dark_red;
+}
+
+.communication__inputs {
+  display: flex;
+  flex-direction: column;
+
+  .receivedContent__text {
+    margin-top: 1em;
+  }
+}
+
+button {
+  cursor: pointer;
+  font-size: 12px;
+  background-color: $vivid_red;
+  padding: 5px 10px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #b52a3f;
+}
+
+input {
+  padding: 3px;
+  background-color: #ddd;
+  font-size: 12px;
+}
