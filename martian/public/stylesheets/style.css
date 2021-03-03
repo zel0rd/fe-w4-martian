@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: AppleSDGothicNeo-Regular, "Malgun Gothic", "맑은 고딕", dotum, "돋움", sans-serif;
+}
+
+.main--upper {
+  position: relative;
+  display: flex;
+}
+.main--upper .chart-text {
+  font-size: 4;
+  fill: #b5d99c;
+}
+.main--upper .svg {
+  background: white;
+  width: 600px;
+  height: 600px;
+}
+.main--upper .arrow img {
+  position: absolute;
+  left: 205px;
+  top: 225px;
+  width: 90px;
+}
+.main--upper .receiver img {
+  width: 50px;
+}
+
+.main--lower {
+  display: flex;
+}
+.main--lower div {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.main--lower div input {
+  width: 300px;
+  height: 40px;
+  border-radius: 7px;
+  border-style: solid;
+}
+.main--lower div button {
+  background-color: #0396a6;
+  color: white;
+  width: 100px;
+  height: 35px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=style.css.map */
