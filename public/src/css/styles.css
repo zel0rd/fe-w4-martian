@@ -17,6 +17,7 @@
   line-height: 60px;
   font-size: 3rem;
   color: #0b5394;
+  transition: all 0.2s;
 }
 .wrapper {
   display: flex;
@@ -24,6 +25,6 @@
   margin-top: 50px;
 }
 
-.receive-info {
+.receive {
   margin-right: 30px;
 }
