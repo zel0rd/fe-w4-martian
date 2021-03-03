@@ -30,5 +30,19 @@
             font-size: 5rem;
         }
     }
+
+
+    .transceiver__info {
+        display: flex;
+        justify-content: space-evenly;
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
+.transmit__status {
+    padding: 0.5rem;
+}
