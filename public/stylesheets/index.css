@@ -1,0 +1,45 @@
+.box {
+    display:flex;
+    justify-content:space-between;
+}
+.moon {
+    height:400px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.moon_bar {
+    display:flex;
+    margin-top: 50px;
+    justify-content:center;
+
+}
+
+.earth_bar {
+    display:flex;
+    justify-content:center;
+}
+
+input {
+    display:block;
+    height: 28px;
+    padding: 0;
+    border: 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+button {
+    display:block;
+    height: 30px;
+    background-color: yellowgreen;
+    border:none;
+    outline:none;
+    font-size: 20px;
+    margin-left:20px;
+}
+
+button:active {
+    transform: translatey(2px);
+}

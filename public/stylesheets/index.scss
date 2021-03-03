@@ -1,0 +1,67 @@
+.box {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.moon {
+    height:400px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.earth {
+    img {
+        width:600px;
+        height:400px;
+    }
+}
+
+.bar_box {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 130px;
+
+    .title {
+        font-size: 25px;
+        font-weight: 1000;
+        padding: 20px 0;
+    }
+}
+
+.input_box {
+    text-align: -webkit-center;
+}
+
+input {
+    display:block;
+    width:350px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.button {
+    display:block;
+    cursor: pointer;
+    margin: 10px 0;
+    width:362px;
+    height: 30px;
+    border:none;
+    outline:none;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: yellowgreen;
+    }
+    &:active {
+        transform: translatey(2px);
+    }
+}
