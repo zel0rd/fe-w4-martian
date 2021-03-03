@@ -1,0 +1,87 @@
+@for $i from 0 to 16 {
+  .hex#{$i} {
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+  }
+}
+
+.hex0 {
+  top: 3%;
+  right: 40%;
+}
+
+.hex15 {
+  top: 3%;
+  left: 40%;
+}
+
+.hex1 {
+  top: 9.5%;
+  right: 24%;
+}
+
+.hex14 {
+  top: 9.5%;
+  left: 24%;
+}
+
+.hex2 {
+  top: 21.5%;
+  right: 10.5%;
+}
+
+.hex13 {
+  top: 21.5%;
+  left: 10.5%;
+}
+
+.hex3 {
+  top: 39.5%;
+  right: 3%;
+}
+
+.hex12 {
+  top: 39.5%;
+  left: 3%;
+}
+
+.hex4 {
+  bottom: 39.5%;
+  right: 3%;
+}
+
+.hex11 {
+  bottom: 39.5%;
+  left: 3%;
+}
+
+.hex5 {
+  bottom: 21.5%;
+  right: 10.5%;
+}
+
+.hex10 {
+  bottom: 21.5%;
+  left: 10.5%;
+}
+
+.hex6 {
+  bottom: 9.5%;
+  right: 24%;
+}
+
+.hex9 {
+  bottom: 9.5%;
+  left: 24%;
+}
+
+.hex7 {
+  bottom: 3%;
+  right: 40%;
+}
+
+.hex8 {
+  bottom: 3%;
+  left: 40%;
+}

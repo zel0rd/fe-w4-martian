@@ -9,10 +9,52 @@
   </head>
   <body>
     <div class="container">
-      <canvas class="canvas" width="700" height="700"></canvas>
+      <div class="canvasBox">
+        <canvas class="canvas" width="700" height="700"></canvas>
+        <div class="canvas__contents">
+          <div class="hex0">0</div>
+          <div class="hex1">1</div>
+          <div class="hex2">2</div>
+          <div class="hex3">3</div>
+          <div class="hex4">4</div>
+          <div class="hex5">5</div>
+          <div class="hex6">6</div>
+          <div class="hex7">7</div>
+          <div class="hex8">8</div>
+          <div class="hex9">9</div>
+          <div class="hex10">A</div>
+          <div class="hex11">B</div>
+          <div class="hex12">C</div>
+          <div class="hex13">D</div>
+          <div class="hex14">E</div>
+          <div class="hex15">F</div>
+
+          <div class="arrow">↑</div>
+        </div>
+      </div>
+
+      <div class="transceiver">
+        <ul class="transceiver__send&receive">
+          <li class="headText">송수신 정보</li>
+          <li><div class="info" id="sendReceive"></div></li>
+          <li><button id="interpret">해석하기</button></li>
+        </ul>
+        <ul class="transceiver__send&receive__interpret">
+          <li class="headText">송수신 해석본</li>
+          <li><div class="info" id="interpretedText"></div></li>
+        </ul>
+        <ul class="transceiver__martianSend">
+          <li class="headText">발신 정보 입력</li>
+          <li><input type="text" placeholder="> hello world" /></li>
+          <li><button>지구로 보내기</button></li>
+        </ul>
+        <ul class="transceiver__martianSend__interpret">
+          <li class="headText">발신 해석본</li>
+          <li><div class="info"></div></li>
+        </ul>
+      </div>
     </div>
 
-    <script src="./js/main.js"></script>
-    <script src="./js/canvas.js"></script>
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>

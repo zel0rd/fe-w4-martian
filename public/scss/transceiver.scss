@@ -1,0 +1,30 @@
+.transceiver {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #b45f07;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  ul {
+    li {
+      padding: 5px 0px;
+    }
+  }
+}
+
+.headText {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.info {
+  border: 1px solid #000;
+  height: 20px;
+}

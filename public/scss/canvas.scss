@@ -1,4 +1,27 @@
+.canvasBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+}
+
 .canvas {
   border: 1px solid #000;
   box-shadow: 5px 5px 5px gray;
+}
+
+.canvas__contents {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+}
+
+.arrow {
+  position: absolute;
+  top: 38%;
+  left: 43%;
+  font-size: 150px;
+  color: #f2a154;
+  transform: rotate(11.25+22.5deg);
+  transition: all 2s;
 }
