@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/common.css" />
+        <link rel="stylesheet" href="/css/index.css" />
+    </head>
+    <body>
+        <div class="all-wrapper">
+
+        <% 
+            let type, btnTxt, canvasName; 
+            for (let i = 0; i < 2; i++) { 
+                if(i === 0) {
+                    type = 'mars';
+                    btnTxt = '지구로 보내기';
+                    canvasName = 'mars-transceiver';
+                } else {
+                    type = 'earth';
+                    btnTxt = '화성으로 보내기';
+                    canvasName = 'earth-transceiver';
+                } 
+        %>
+            <section class=<%= type %>>
+                <div class="transceiver__view">      
+                    <img src="/img/top_arrow.png" alt="arrow" class="transform__rotate-16">
+                    <canvas width="500" height="500" class=<%= canvasName %> ></canvas>                                
+                </div>
+
+                <div class="transceiver__control">
+                    <div class="transceiver__control__receive">                        
+                        <input type="text"/>                    
+                        <button type="button">해석하기</button>
+                    </div>
+
+                    <div class="transceiver__control__send">                        
+                        <input type="text" class="send__text"/>                    
+                        <button type="button"><%= btnTxt %></button>
+                    </div>
+                </div>
+            </section>
+        <% } %>                                    
+        </div>
+    </body>
+    <script type="module" src="/js/index.js"></script>
+</html>

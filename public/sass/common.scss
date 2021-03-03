@@ -1,0 +1,23 @@
+@for $i from 1 through 9 {
+    .col-#{$i} {
+        width: 10% * $i;
+    }
+}
+
+@for $i from 1 through 9 {
+    .row-#{$i} {
+        height: 10% * $i;
+    }
+}
+
+
+@for $i from 1 through 16 {
+    .transform__rotate-#{$i} {        
+        @if $i == 1 {
+            transform: rotate(11.25deg);
+        } @else {
+            transform: rotate(( ($i - 1) * 22.5deg) + 11.25deg);
+        }
+        // 1. 11.25 -> 2. 33.75(22.5 +) -> 3. 56.25(22.5 +) -> 4 ....
+    }
+}

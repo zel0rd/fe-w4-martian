@@ -1,0 +1,86 @@
+$width: 1280px;
+$fontFamily: NanumGothic, '나눔고딕', 'Nanum Gothic', 'Malgun Gothic',
+    '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, Arial, sans-serif;
+$fontSize: 18px;
+$btnBackColor: #b45f06;
+$white: #fff;
+$lightBlack: #333;
+
+body {
+    font-family: $fontFamily;
+    background-image: url('../img/galaxy2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.all-wrapper {
+    width: $width;
+    margin: 10px auto;
+}
+
+section {
+    display: flex;
+}
+
+.transceiver__view {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+        width: 50px;
+        height: 50px;
+        transition-duration: 1s;
+        transition-property: transform;        
+    }
+}
+
+.transceiver__control {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;    
+    justify-content: center;
+    align-items: center;
+
+
+    div {
+        * {
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            text-shadow: 5px 5px 5px $lightBlack;
+            color: $white;
+        }
+
+        input,
+        button {
+            display: block;
+            border: none;            
+            font-size: $fontSize;
+        }
+
+        input {
+            padding: 8px 3px;
+            box-shadow: 0 0 0 1.05px $lightBlack;
+            border-radius: 3%;
+            width: 100%;
+        }
+        button {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 15px;
+            padding: 10px 5px;
+            border-radius: 10%;            
+            color: $white;
+            background-color: $btnBackColor;
+        }
+    }
+}
