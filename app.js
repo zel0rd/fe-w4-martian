@@ -7,9 +7,10 @@ const template = require('./public/javascripts/template.js');
 app.use(express.static('public'));
 
 app.get('/', (req, res) =>{
-   let title = '< MARTIAN >';
-   let canvas = template.canvas();
-   let html = template.HTML(title, canvas);
+   let title = '< MARTIAN >'; 
+   let msgMonitor = template.msgMonitor();
+   let html = template.HTML(title,  msgMonitor);
+
    res.send(html);
 });
 

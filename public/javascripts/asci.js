@@ -6,8 +6,8 @@ export function hexaCheck(num){
    return num;
 }
 
-export function aschiMessageToHexa(){
-   const str = 'HOW ALIVE?';
+export function aschiMessageToHexa(str = 'HOW ALIVE?'){
+   // const str = 'HOW ALIVE?';
    let result = [];
    for(let i=0; i<str.length;i++){
       let str_10 = str.charCodeAt(i);
