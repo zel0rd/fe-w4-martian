@@ -4,10 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>치직...ㅊ치.ㅈ.ㅣ직.</title>
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <script src="main.js"></script>
+    <div id="space">
+      <div id="mars" class="planet">
+        <div class="inputBox">
+          <input type="text" placeholder="화성 => 지구 전송 메세지" />
+          <div class="convertedBox"></div>
+          <button>지구로 보내기</button>
+        </div>
+        <div class="transceiver"></div>
+        <div class="inputBox">
+          <div id="watney"></div>
+          <input type="text" placeholder="수신 대기 중" />
+          <button>해석하기</button>
+        </div>
+      </div>
+      <div class="between">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div id="earth" class="planet">
+        <div class="inputBox">
+          <input type="text" placeholder="지구 => 화성 전송 메세지" />
+          <div class="convertedBox"></div>
+          <button>화성으로 보내기</button>
+        </div>
+        <div class="transceiver"></div>
+        <div class="inputBox">
+          <input type="text" placeholder="수신 대기 중" />
+          <button>해석하기</button>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
