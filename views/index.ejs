@@ -11,16 +11,64 @@
 </head>
 <body>
 
-    
-    <p class="title">welcome to Tami palnet 🌕</p>
+    <p class="title">welcome to Tami planet 🌕</p>
     <div class="wrap">
         <!-- <div class="markers"></div> -->
         <button type="button" id="arrow">
             👆
         </button>
-        <canvas class="canvas"></canvas>
+        <!-- <canvas class="canvas"></canvas> -->
 
-        <!-- <div class="roulette" id="roulette"></div> -->
+        <div class="recept__zone">
+            <div class="recept__box">
+                <div class="line line__1">
+                    <span class="line__txt">0</span>
+                    <span class="line__txt">8</span>
+                </div>
+                <div class="line line__2">
+                    <span class="line__txt">1</span>
+                    <span class="line__txt">9</span>
+                </div>
+                <div class="line line__3">
+                    <span class="line__txt">2</span>
+                    <span class="line__txt">A</span>
+                </div>
+                <div class="line line__4">
+                    <span class="line__txt">B</span>
+                    <span class="line__txt">3</span>
+                </div>
+                <div class="line line__5">
+                    <span class="line__txt">C</span>
+                    <span class="line__txt">4</span>
+                </div>
+                <div class="line line__6">
+                    <span class="line__txt">D</span>
+                    <span class="line__txt">5</span>
+                </div>
+                <div class="line line__7">
+                    <span class="line__txt">E</span>
+                    <span class="line__txt">6</span>
+                </div>
+                <div class="line line__8">
+                    <span class="line__txt">F</span>
+                    <span class="line__txt">7</span>
+                </div>
+            </div>
+        <div class="roulette" id="roulette"></div>
+    </div>
+
+    <div class = "transmission">
+        <div class="input__box">
+            <label for="recept__inp">📥  송수신정보</label>
+            <input class="recept__inp" type="text" >
+            <button class="recept__btn">🔐 해석하기</button>
+        </div>
+        <div class="input__box">
+            <label for="send__inp">📤  발신정보</label>
+            <input class="send__inp" type="text" >
+            <button class="send__btn">📧 지구로 보내기</button>
+            <div class="send__trans"></div>
+        </div>
     </div>
 
     <script type="module" src="/js/main.js"></script>

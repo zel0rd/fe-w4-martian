@@ -1,9 +1,9 @@
 class MyPromise2 {
     constructor(){
-
+        this.cbList=[];
     }
 
-    then(){
+    then(cb){
 
     }
 }
