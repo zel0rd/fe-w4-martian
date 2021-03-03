@@ -97,16 +97,20 @@ body {
 }
 
 .table__arrow {
+
+    /* 화살표를 정사각형 박스의 정중앙으로 맞춰야 회전했을 때 각도가 안 흐트러짐 */
     display: block;
-    width: 55px;
-    height: 50px;
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    padding-top: 2px;
+
     position: absolute;
-    top: 220px;
-    left: 179px;
-    font-size: 4rem;
-    color: rgb(106, 168, 158);
-    /* transform: rotate(); */
-    transition-duration: 400ms;
+    top: 210px;
+    left: 169px;
+    font-size: 5rem;
+    color: rgb(245, 108, 53);
+    transition: transform 400ms;
 }
 
 /* ======== 입력창 ======== */
@@ -136,6 +140,20 @@ body {
     width: 300px;
     height: 35px;
 }
+.reception_box {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    color: #333;
+}
+.trans_result {
+    width: 300px;
+    padding-left: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.4rem;
+    color: rgb(245, 108, 53);
+}
+
 .input__btn {
     width: 120px;
     height: 33px;
@@ -146,4 +164,9 @@ body {
     background-color: rgb(177, 226, 218);
     color: #333;
     cursor: pointer;
+}
+.inactive {
+    background-color: #eee;
+    color: #ccc;
+    cursor: default;
 }
