@@ -1,0 +1,153 @@
+@import "./var.scss";
+@import "./color.scss";
+
+* {
+  font-size: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1000px;
+  min-height: 1000px;
+  position: relative;
+}
+
+.txrx {
+  width: $circle-radius * 2;
+  height: $circle-radius * 2;
+  position: relative;
+  top: 10%;
+  left: 10%;
+  background-color: $redorange;
+  border: 3px solid $black;
+  border-radius: 9999px;
+  
+  @for $i from 0 through ($pie-cnt - 1) {
+    $start-divider-angle: 180deg;
+
+    .divider-#{$i} {
+      $this-angle: $start-divider-angle + ($i * $pie-angle);
+
+      width: 3px;
+      height: $circle-radius - 2px;
+      position: absolute;
+      top: $circle-radius - 3px;
+      left: $circle-radius - 4.5px;
+      background-color: $darkgray;
+      transform-origin: top;
+      transform: rotate($this-angle);
+    }
+
+    $start-hex-angle: $pie-angle / 2;
+
+    .hex-#{$i} {
+      $this-angle: $start-hex-angle + ($i * $pie-angle) - 1deg;
+      $font-size: 30px;
+      
+      width: 3px;
+      height: $circle-radius - 2px;
+      padding-top: 10px;
+      position: absolute;
+      top: 0;
+      left: $circle-radius - 4.5px;
+      font-size: $font-size;
+      font-weight: 800;
+      color: $lightgray;
+      background: transparent;
+      transform-origin: bottom;
+      transform: rotate($this-angle);
+
+      &.blink {
+        color: $white;
+      }
+    }
+  }
+
+  .arrow-cont {
+    width: $arrow-width;
+    height: $arrow-height;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-1 * $arrow-width / 2, -1 * $arrow-width / 2, 0);
+    border-radius: 50%;
+    background-color: $white;
+
+    .arrow {
+      $width: 70%;
+      $height: $width;
+      $start-angle: ($pie-angle / 2);
+
+      width: $width;
+      position: absolute;
+      top: (100% - $width) / 2;
+      left: (100% - $height) / 2;
+      transform: rotate($start-angle);
+      transition-duration: 300ms;
+
+      @for $i from 0 through ($pie-cnt - 1) {
+        &.rotate-clock-for-#{$i} {
+          transform: rotate($start-angle + ($pie-angle * $i));
+        }
+
+        &.rotate-unclock-for-#{$i} {
+          transform: rotate($start-angle + ($pie-angle * $i) - 360deg);
+        }
+      }
+    }
+
+    .ring {
+      $width: 90%;
+      $height: $width;
+
+      width: $width;
+      height: $height;
+      position: absolute;
+      top: (100% - $width) / 2;
+      left: (100% - $height) / 2;
+      border: 3px solid $black;
+      border-radius: 50%;
+    }
+  } 
+}
+
+%form-cont {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 7.5%;
+
+  .title {
+    color: $black;
+    font-size: $form-title-font-size;
+    font-weight: 800;
+  }
+
+  .form {
+    width: $form-width;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+}
+
+%btn {
+  display: block;
+  margin-top: 10px;
+  border-radius: 30px;
+  font-size: $form-btn-font-size;
+}
+
+.receive-cont {
+  @extend %form-cont;
+
+  .interpret-btn {
+    @extend %btn;
+  }
+}
+
+.transmit-cont {
+  @extend %form-cont;
+  
+  .transmit-btn {
+    @extend %btn;
+  }
+}
