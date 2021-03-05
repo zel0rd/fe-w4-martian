@@ -1,0 +1,36 @@
+.renderPage {
+  width: 930px;
+}
+.renderPage .circleImg {
+  position: absolute;
+  left: -225px;
+  top: -5px;
+}
+.renderPage .arrowImg {
+  position: absolute;
+  left: -205px;
+  top: -208px;
+  transform: rotate(-90deg) scale(0.1);
+  transition: all 0.5s linear;
+}
+.renderPage .arrowImgBlink {
+  -webkit-animation-name: blinker;
+  -webkit-animation-iteration-count: 2;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+/*# sourceMappingURL=renderPage.css.map */
