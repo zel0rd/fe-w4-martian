@@ -41,8 +41,6 @@ transBtn.addEventListener("click", function(){
 
 sendBtn.addEventListener("click", function(){
     disableInputBox()
-    // transceiver.disabled = true;
-    // sendInfo.disabled = true;
     transceiver.value = "";
     let arr = stringToHex(sendInfo.value)
     let index = 0;
