@@ -13,9 +13,9 @@ function disableInputBox(){
 }
 
 function enableInputBox(){
-    transceiver.disabled = false;
+    // transceiver.disabled = false;
     sendInfo.disabled = false;
-    transBtn.disabled = false;
+    // transBtn.disabled = false;
     sendBtn.disabled = false;
 }
 
