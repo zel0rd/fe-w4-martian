@@ -22,10 +22,12 @@ class Controller {
             index += 1;
             setTimeout(function() {
                 arrowImg.classList.toggle("arrowImgBlink")
+            }, 500)
+            setTimeout(function() {
+                arrowImg.classList.toggle("arrowImgBlink")
             }, 1000)
-          
             sendInfo.value = hexToString(transceiver.value.slice(0,index))
-            if(index < arr.length) {timerId = setTimeout(tick,2000)}
+            if(index < arr.length) {timerId = setTimeout(tick,1000)}
             else {
                 enableInputBox()
             }
@@ -42,12 +44,12 @@ class Controller {
             index += 1;
             setTimeout(function() {
                 arrowImg.classList.toggle("arrowImgBlink")
-            }, 1000)
+            }, 500)
             setTimeout(function() {
                 arrowImg.classList.toggle("arrowImgBlink")
-            }, 2000)
+            }, 100)
             transceiver.value = arr.slice(0,index);
-            if(index < arr.length) {timerId = setTimeout(tick,3000)}
+            if(index < arr.length) {timerId = setTimeout(tick,1000)}
             else {
                 enableInputBox()
             }
@@ -86,7 +88,7 @@ fetch('http://zelord.tk/api/word')
             transceiver.value = arr.slice(0,index);
             sendInfo.value = hexToString(transceiver.value.slice(0,index))
             
-            if(index < arr.length) {timerId = setTimeout(tick,2000)}
+            if(index < arr.length) {timerId = setTimeout(tick,1000)}
             else {
                 enableInputBox()
             }
